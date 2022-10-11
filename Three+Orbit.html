@@ -16,14 +16,7 @@
 
             import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
 
-        </script>
-    </head>
-    
-    <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>    
-        
-        <script>
-            
+
 
             var scene=new THREE.Scene();
             scene.background=new THREE.Color(0X2A3B4C);
@@ -53,6 +46,48 @@
             controls.update();
             renderer.render( scene, camera );
             }
+
+
+
+
+        </script>
+    </head>
+    
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>    
+        
+        <script>
+            
+/*
+            var scene=new THREE.Scene();
+            scene.background=new THREE.Color(0X2A3B4C);
+            var camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight);
+            var renderer=new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth,window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            const controls = new OrbitControls( camera, renderer.domElement );
+            //controls.update() must be called after any manual changes to the camera's transform
+            camera.position.set( 0, 20, 100 );
+            controls.update();
+
+
+
+            var geometry=new THREE.BoxGeometry();
+            var material=new THREE.MeshBasicMaterial({color: 0X00FF00});
+            var cube=new THREE.Mesh(geometry,material);
+            scene.add(cube);
+            camera.position.z=5;
+            renderer.render(scene,camera);     
+
+            
+            function animate() {
+            requestAnimationFrame( animate );
+            // required if controls.enableDamping or controls.autoRotate are set to true
+            controls.update();
+            renderer.render( scene, camera );
+            }
+        */
         </script>
     </body>
 
