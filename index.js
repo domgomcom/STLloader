@@ -1,6 +1,6 @@
-import * as THREE from 'threejs/three.module.js';
-import {STLLoader} from 'threejs/STLLoader.js';
-import {OrbitControls} from 'threejs/OrbitControls.js';
+import * as THREE from './threejs/three.module.js';
+import {STLLoader} from './threejs/STLLoader.js';
+import {OrbitControls} from './threejs/OrbitControls.js';
 
 let scene, camera, renderer, object;
 
@@ -41,7 +41,7 @@ function animate(){
 }
 
 let loader = new STLLoader();
-loader.load('Baby_Yoda_v2.2.stl', (model)=>{
+loader.load('./3dmodels/Baby_Yoda_v2.2.stl', (model)=>{
     object = new THREE.Mesh(
         model,
         new THREE.MeshLambertMaterial({color: 0x00ff00})
