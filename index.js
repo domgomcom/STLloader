@@ -1,6 +1,6 @@
-import * as THREE from './threejs/three.module.js';
-import {STLLoader} from './threejs/STLLoader.js';
-import {OrbitControls} from './threejs/OrbitControls.js';
+import * as THREE from 'threejs/three.module.js';
+import {STLLoader} from 'threejs/STLLoader.js';
+import {OrbitControls} from 'threejs/OrbitControls.js';
 
 let scene, camera, renderer, object;
 
