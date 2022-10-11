@@ -11,7 +11,8 @@
         
         <script src=""></script>
 
-        <script>
+        <script type="module">
+            import {OrbitControls} from './threejs/OrbitControls.js';
         </script>
     </head>
     
@@ -19,7 +20,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>    
         
         <script>
-            import {OrbitControls} from './threejs/OrbitControls.js';
+            
 
             var scene=new THREE.Scene();
             scene.background=new THREE.Color(0X2A3B4C);
