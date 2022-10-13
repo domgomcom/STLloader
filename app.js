@@ -13,7 +13,7 @@ const mesh = new THREE.Mesh(box, material);
 
 camera.position.z = 5;
 light.position.set(0,0,1);
-render.setsize(window.innerWidth/window.innerHeight);
+render.setSize(window.innerWidth/window.innerHeight);
 
 document.body.appendChild(render.domElement);
 scene.add(mesh, light);
