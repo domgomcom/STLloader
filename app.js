@@ -12,6 +12,8 @@ const render = new THREE.WebGLRenderer();
 const material = new THREE.MeshBasicMaterial({color:0x2222ff});
 //const mesh = new THREE.Mesh(box, material);
 
+scene.background = new THREE.Color(0x2a003b);
+
 var geometry=new THREE.BoxGeometry();
             //var material=new THREE.MeshBasicMaterial({color: 0X00FF00});
             var box =new THREE.Mesh(geometry,material);
@@ -24,6 +26,7 @@ render.setSize(window.innerWidth/window.innerHeight);
 document.body.appendChild(render.domElement);
 //scene.add(mesh, light);
 scene.add(box);
+scene.add(light);
 
 function animate(){
     requestAnimationFrame(animate);
