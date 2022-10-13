@@ -1,4 +1,4 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
+//import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight,0.1,1000);
@@ -15,7 +15,7 @@ render.setSize(window.innerWidth/window.innerHeight);
 
 document.body.appendChild(render.domElement);
 scene.add(mesh, light);
-scene.add(cube);
+scene.add(box);
 
 function animate(){
     requestAnimationFrame(animate);
