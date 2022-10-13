@@ -1,4 +1,7 @@
 //import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
+import * as THREE from './threejs/three.module.js';
+import {STLLoader} from './threejs/STLLoader.js';
+import {OrbitControls} from './threejs/OrbitControls.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight,0.1,1000);
