@@ -15,9 +15,8 @@ const material = new THREE.MeshBasicMaterial({color:0x2222ff});
 scene.background = new THREE.Color(0x2a003b);
 
 var geometry=new THREE.BoxGeometry();
-            //var material=new THREE.MeshBasicMaterial({color: 0X00FF00});
-            var box =new THREE.Mesh(geometry,material);
-            scene.add(box);
+var box =new THREE.Mesh(geometry,material);
+    
 
 camera.position.z = 5;
 light.position.set(0,0,1);
