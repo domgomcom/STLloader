@@ -1,6 +1,5 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0";
 
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHeight,0.1,1000);
 const light = new THREE.DirectionalLight(0xff0000, 0.5);
@@ -22,24 +21,3 @@ function animate(){
     mesh.rotation.y += 0.01;
     render.render(scene, camera);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
