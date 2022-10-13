@@ -5,21 +5,26 @@ const camera = new THREE.PerspectiveCamera(35, window.innerWidth/window.innerHei
 const light = new THREE.DirectionalLight(0xff0000, 0.5);
 const render = new THREE.WebGLRenderer();
 
-const box = new THREE.BoxGeometry(1,1,1);
+//const box = new THREE.BoxGeometry(1,1,1);
 const material = new THREE.MeshBasicMaterial({color:0x2222ff});
-const mesh = new THREE.Mesh(box, material);
+//const mesh = new THREE.Mesh(box, material);
+
+var geometry=new THREE.BoxGeometry();
+            //var material=new THREE.MeshBasicMaterial({color: 0X00FF00});
+            var box =new THREE.Mesh(geometry,material);
+            scene.add(box);
 
 camera.position.z = 5;
 light.position.set(0,0,1);
 render.setSize(window.innerWidth/window.innerHeight);
 
 document.body.appendChild(render.domElement);
-scene.add(mesh, light);
+//scene.add(mesh, light);
 scene.add(box);
 
 function animate(){
     requestAnimationFrame(animate);
-    mesh.rotation.y += 0.01;
+    //mesh.rotation.y += 0.01;
     render.render(scene, camera);
 }
 animate();
