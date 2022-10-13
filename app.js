@@ -15,6 +15,7 @@ render.setSize(window.innerWidth/window.innerHeight);
 
 document.body.appendChild(render.domElement);
 scene.add(mesh, light);
+scene.add(cube);
 
 function animate(){
     requestAnimationFrame(animate);
